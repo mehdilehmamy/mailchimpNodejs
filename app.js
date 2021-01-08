@@ -36,7 +36,7 @@ app.post("/", function(request, response){
     const url = "https://us7.api.mailchimp.com/3.0/lists/3ddbd6a318";
     const options = {
         method: "POST",
-        auth: "mehnou:31c5ffff70c712eb0b631c91d1861879-us7"
+        auth: "XXXXXX" // API key goes here
     }
     
     const myRequest = https.request(url, options, function(mailRes){
@@ -52,5 +52,3 @@ app.post("/", function(request, response){
 });
 
  
-// API KEY 31c5ffff70c712eb0b631c91d1861879-us7
-// Audience ID 3ddbd6a318
